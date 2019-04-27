@@ -1,0 +1,108 @@
+/*height: 100%;*/
+/*margin: 0;*/
+/*padding: 0;*/
+
+
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.input-slot {
+    text-align: center;
+
+}
+
+
+.grid-container * {
+    /*border: 1px solid black;*/
+    position: relative;
+    background-color: #6d7379;
+}
+
+.grid-container *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Container";
+
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". Content .";
+    grid-area: Container;
+    align-content: center;
+}
+
+.Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "logo" "username" "password" "conferm-pass" "planet-name" "todo-add" ".";
+    grid-area: Content;
+}
+
+.logo {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    grid-area: logo;
+}
+
+.moon-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.username {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text" "input-slot";
+    grid-area: username;
+}
+
+
+.password {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: password;
+}
+
+.conferm-pass {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: conferm-pass;
+}
+
+.planet-name {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text" "input-slot";
+    grid-area: planet-name;
+}
+
+.todo-add {
+    grid-area: todo-add;
+}
