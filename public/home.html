@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Form GQL</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
 
@@ -18,7 +20,7 @@
                     <p>Username</p>
                 </div>
                 <div class="input-slot">
-                    <input type="search" placeholder="Ex: Aesop134V">
+                    <input class="username-input" type="search" placeholder="Ex: Aesop134V">
                 </div>
             </div>
             <div class="password">
@@ -26,15 +28,15 @@
                     <p>Password</p>
                 </div>
                 <div class="input-slot">
-                    <input type="password" placeholder="Ex: password123">
+                    <input class="password-input" type="password" placeholder="Ex: password123">
                 </div>
             </div>
-            <div class="conferm-pass">
+            <div class="retype">
                 <div class="text">
                     <p>Retype Password</p>
                 </div>
                 <div class="input-slot">
-                    <input type="password" placeholder="Ex: password123">
+                    <input class="retype-input" type="password" placeholder="Ex: password123">
                 </div>
             </div>
             <div class="planet-name">
@@ -42,10 +44,14 @@
                     <p>Planet Name</p>
                 </div>
                 <div class="input-slot">
-                    <input type="search" placeholder="Ex: Mars">
+                    <input class="planet-name-input" type="search" placeholder="Ex: Mars">
                 </div>
             </div>
-            <div class="todo-add"></div>
+            <div class="todo-add">
+                <div class="input-slot">
+                <input class="submit-button" type="submit" onclick="submit()">
+                </div>
+            </div>
         </div>
     </div>
 </div>

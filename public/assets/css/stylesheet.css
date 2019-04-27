@@ -88,7 +88,7 @@ html, body, .grid-container {
     grid-area: password;
 }
 
-.conferm-pass {
+.retype {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
